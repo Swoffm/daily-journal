@@ -1,0 +1,60 @@
+form {
+    display: flex;
+    justify-content: center;
+}
+fieldset {
+    font-size: 3em;
+    text-align: center;
+    
+    
+
+}
+ h1 {
+     text-align: center;
+     font-size: 3.5em;
+ }
+
+ /* styles the first div that holds the date of entry */
+
+.journalDate {
+    border-bottom: .1em solid black;
+    margin-bottom: .5em;
+    padding-bottom: .5em;
+    display: flex;
+    flex-direction: column;
+}
+
+#journalDate {
+    font-size: .5em;
+}
+
+
+/* this styles the concepts learned div inside of the form */
+
+.concepts {
+    border-bottom: .1em solid black;
+    margin-bottom: .5em;
+    padding-bottom: .5em;
+    display: flex;
+    flex-direction: column;
+}
+
+/* this styles the journal entry div class inside of the form */
+.entry {
+    border-bottom: .1em solid black;
+    margin-bottom: .5em;
+    padding-bottom: .5em; 
+    display: flex;
+    flex-direction: column;  
+}
+
+/* this styles the div wrapping around the select */
+.select {
+    margin-bottom: .5em;
+    display: flex;
+    flex-direction: column;
+}
+
+#mood, #journalEntry, #concepts {
+    font-size: .5em;
+}
