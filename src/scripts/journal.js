@@ -1,20 +1,22 @@
-const journalEntry = {
-    date: "6/1/2020",
-    concepts: "JavaScript Functions",
-    journalEntry: "I learned the difference between pure functions and impure functions",
-    mood: "Great"
+
+
+
+/*
+    Purpose: To create, and return, a string template that
+    represents a single journal entry object as HTML
+
+    Arguments: journalEntry (object)
+*/
+const makeJournalEntryComponent = (journalEntry) => {
+    // Create your own HTML structure for a journal entry
+
+    const stringTemplate = `<section class="journalEntry">
+    <ul>
+    <li>Date: ${}
+    </ul>
+    </section>`
+    return ``
 }
 
-const journalEntry = {
-    date: "5/28/2020",
-    concepts: "Modular Code",
-    journalEntry: "I learned how important it is to write reusable code.",
-    mood: "Great"
-}
 
-const journalEntry = {
-    date: "5/29/2020",
-    concepts: "Flexbox",
-    journalEntry: "I learned the importance of observing parent and child relationships",
-    mood: "Great"
-}
+
