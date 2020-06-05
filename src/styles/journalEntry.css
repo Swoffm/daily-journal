@@ -1,0 +1,43 @@
+
+/* this is the article holding all the entry logs */
+.entryLog {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+/* this is the section in below entrylog article */
+.journalEntry {
+    border: 3px solid #374785;
+    color: #374785;
+    justify-content: space-evenly;
+    background-color: #F76C6C;
+    max-width: 45%;
+    min-width: 33%;
+    /* width: 33%; */
+    margin: .5em .5em;
+}
+
+/* this changes the unordered list  */
+.journalEntry__List {
+    list-style-type: none;
+    padding: 0 .9em;
+    /* max-width: 100%; */
+}
+
+/* this changes the journal list items sections inside of journal list */
+.list__JournalEntry {
+    margin: .7em .5em;
+}
+
+.list__Date {
+    margin: .7em .5em;
+
+}
+.list__Concepts {
+    margin: .7em .5em;
+
+}.list__Mood {
+    margin: .7em .5em;
+
+}

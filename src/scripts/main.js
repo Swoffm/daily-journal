@@ -1,0 +1,7 @@
+
+getJournalData().then(
+    () => {
+        journalEntryList();
+    }
+)
+
