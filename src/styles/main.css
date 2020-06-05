@@ -1,0 +1,13 @@
+@import "journal.css";
+@import "journalEntry.css";
+
+body {
+    background-color: #A8D0E6;
+    /* background-color: #3B8BEB; */
+}
+
+h1 {
+    text-align: center;
+   color: #F76C6C;
+   font-size: 3.5em;
+}

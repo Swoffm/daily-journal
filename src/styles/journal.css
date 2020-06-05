@@ -1,23 +1,21 @@
 form {
     display: flex;
     justify-content: center;
+
 }
 fieldset {
     font-size: 3em;
     text-align: center;
-    
-    
-
+    border: .1em solid #F76C6C;
+    color: #F76C6C;
+    background-color: #374785;
 }
- h1 {
-     text-align: center;
-     font-size: 3.5em;
- }
+ 
 
  /* styles the first div that holds the date of entry */
 
 .journalDate {
-    border-bottom: .1em solid black;
+    border-bottom: .1em solid #F76C6C;
     margin-bottom: .5em;
     padding-bottom: .5em;
     display: flex;
@@ -32,7 +30,7 @@ fieldset {
 /* this styles the concepts learned div inside of the form */
 
 .concepts {
-    border-bottom: .1em solid black;
+    border-bottom: .1em solid #F76C6C;
     margin-bottom: .5em;
     padding-bottom: .5em;
     display: flex;
@@ -41,7 +39,7 @@ fieldset {
 
 /* this styles the journal entry div class inside of the form */
 .entry {
-    border-bottom: .1em solid black;
+    border-bottom: .1em solid #F76C6C;
     margin-bottom: .5em;
     padding-bottom: .5em; 
     display: flex;

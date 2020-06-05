@@ -1,22 +1,16 @@
-const journalEntry = [{
-    date: "6/1/2020",
-    concepts: "JavaScript Functions",
-    journalEntry: "I learned the difference between pure functions and impure functions",
-    mood: "Great"
-},
+let journalEntry = [] 
 
-{
-    date: "5/28/2020",
-    concepts: "Modular Code",
-    journalEntry: "I learned how important it is to write reusable code.",
-    mood: "Great"
-},
 
-{
-    date: "5/29/2020",
-    concepts: "Flexbox",
-    journalEntry: "I learned the importance of observing parent and child relationships",
-    mood: "Great"
+const getJournalData = () => {
+    return fetch("http://localhost:8088/entries").then(
+        (httpResponse) => {
+            return httpResponse.json()
+        }
+    )
+        .then(
+            (arrayOfEntries) => {
+                // 100 percent sure the data is back
+                journalEntry = arrayOfEntries
+            }
+        )
 }
-
-]
