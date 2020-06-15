@@ -23,5 +23,6 @@ const makeJournalEntryComponent = (myJournalEntry) => {
     return stringTemplate
 }
 
+export default makeJournalEntryComponent
 
 
