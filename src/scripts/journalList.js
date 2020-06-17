@@ -1,13 +1,13 @@
 
 import makeJournalEntryComponent from "../scripts/journal.js"
-import journalDataObject from "../scripts/journalData.js"
+import {journalEntry} from "../scripts/journalData.js"
 
 const journalEntryList = () => {
 
     // const entryList = journalEntry
 
     // create an iterate on the list
-    for (entry of journalDataObject.journalEntry) {
+    for (let entry of journalEntry) {
         // convert
         const convertedEntry = makeJournalEntryComponent(entry)
         // find location
