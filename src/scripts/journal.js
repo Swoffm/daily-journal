@@ -1,5 +1,5 @@
 import factoryJournalEntry from "./createEntry.js";
-import API  from "./journalData.js";
+import API from "./journalData.js";
 import journalEntryList from "./journalList.js"
 
 // import journalEntryList from "../scripts/journalList.js"
@@ -35,47 +35,46 @@ const saveButtonEvent = () => {
 
     const saveButtonLocation = document.querySelector("#saveEntry");
     saveButtonLocation.addEventListener("click", clickEvent => {
+        clickEvent.preventDefault()
         let userMood = document.querySelector("#mood").value
         let userJournalEntry = document.querySelector("#journalEntry").value
         let userConcepts = document.querySelector("#concepts").value
         let userJournalDate = document.querySelector("#journalDate").value
 
-        // if (userMood === "") {
-        //     alert("Missing a mood")
-        // }
-        // else if (userJournalEntry === "") {
-        //     alert("Missing a Journal Entry")
-        // }
-        // else if (userConcepts === "") {
-        //     alert("Missing a Concept Entry")
-        // }
-        // else if (userJournalDate === "") {
-        //     alert("Missing a journal date")
-        // }
+        if (userMood === "") {
+            alert("Missing a mood")
+        }
+        else if (userJournalEntry === "") {
+            alert("Missing a Journal Entry")
+        }
+        else if (userConcepts === "") {
+            alert("Missing a Concept Entry")
+        }
+        else if (userJournalDate === "") {
+            alert("Missing a journal date")
+        }
 
 
-        // if (userMood !== "" && userJournalEntry !== "" && userConcepts !== "" && userJournalDate !== "") {
+        if (userMood !== "" && userJournalEntry !== "" && userConcepts !== "" && userJournalDate !== "") {
 
-            
+
             userObject = factoryJournalEntry(userJournalDate, userConcepts, userJournalEntry, userMood)
-            
-            console.log("before", userObject)
+
+
             API.saveJournalEntry(userObject).then(() => {
-                journalEntryList()
-                // API.getJournalData()
-            })
-            // API.getJournalData()
-            .then(() => {
-                console.log("inside the then")
-                // journalEntryList()
+
                 API.getJournalData()
+                .then(() => {
+
+                    journalEntryList()
+
+                })
 
             })
-            // journalEntryList()
-            console.log("lion", userObject)
 
-        // }
-       // journalEntryList()
+        }
+       
+
     }
     )
 }
