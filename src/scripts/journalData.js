@@ -11,8 +11,10 @@
            .then(
                (arrayOfEntries) => {
                //    journalEntry = []
+               
                    // 100 percent sure the data is back
                    API.journalEntry = arrayOfEntries
+
                }
            )
    },
