@@ -76,6 +76,7 @@ const saveButtonEvent = () => {
                 // journalEntryList()
             })
         }
+        
 
 
         //below is the what will be excuted if userObject has an ID

@@ -22,18 +22,11 @@
       "mood": "Great"
     },
     {
-      "date": "2020-06-23",
-      "concepts": "Posting to a local API",
-      "journalEntry": "I learned how to post objects to my local API",
-      "mood": "Great",
+      "date": "2020-06-24",
+      "concepts": "Delete and edit button",
+      "journalEntry": "I learned how to implement a delete button and an edit button",
+      "mood": "Absolute Ecstasy",
       "id": 4
-    },
-    {
-      "date": "2020-06-22",
-      "concepts": "asadsad",
-      "journalEntry": "STUDMUFFIN",
-      "mood": "Sub Normal",
-      "id": 5
     }
   ]
 }
