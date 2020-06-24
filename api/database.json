@@ -1,18 +1,18 @@
 {
   "entries": [
     {
-      "id": 1,
-      "date": "6/1/2020",
+      "date": "2020-06-16",
       "concepts": "JavaScript Functions",
       "journalEntry": "I learned the difference between pure functions and impure functions",
-      "mood": "Great"
+      "mood": "Well",
+      "id": 1
     },
     {
-      "id": 2,
-      "date": "5/28/2020",
+      "date": "2020-06-22",
       "concepts": "Modular Code",
       "journalEntry": "I learned how important it is to write reusable code.",
-      "mood": "Great"
+      "mood": "Great",
+      "id": 2
     },
     {
       "id": 3,
@@ -20,6 +20,20 @@
       "concepts": "Flexbox",
       "journalEntry": "I learned the importance of observing parent and child relationships",
       "mood": "Great"
+    },
+    {
+      "date": "2020-06-23",
+      "concepts": "Posting to a local API",
+      "journalEntry": "I learned how to post objects to my local API",
+      "mood": "Great",
+      "id": 4
+    },
+    {
+      "date": "2020-06-22",
+      "concepts": "asadsad",
+      "journalEntry": "STUDMUFFIN",
+      "mood": "Sub Normal",
+      "id": 5
     }
   ]
 }

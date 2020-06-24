@@ -22,13 +22,6 @@ const journalEntryList = () => {
         entryLocation.innerHTML += convertedEntry
     }
 
-    //find a location
-
-
-    //place it in the location
-
-
-
 }
 
 export default journalEntryList

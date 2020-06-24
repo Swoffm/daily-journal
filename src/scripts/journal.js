@@ -1,9 +1,3 @@
-import factoryJournalEntry from "./createEntry.js";
-import API from "./journalData.js";
-import journalEntryList from "./journalList.js"
-
-// import journalEntryList from "../scripts/journalList.js"
-
 /*
     Purpose: To create, and return, a string template that
     represents a single journal entry object as HTML
@@ -30,61 +24,8 @@ const makeJournalEntryComponent = (myJournalEntry) => {
     return stringTemplate
 }
 
-let userObject;
-const saveButtonEvent = () => {
-
-    const saveButtonLocation = document.querySelector("#saveEntry");
-    saveButtonLocation.addEventListener("click", clickEvent => {
-        clickEvent.preventDefault()
-        let userMood = document.querySelector("#mood").value
-        let userJournalEntry = document.querySelector("#journalEntry").value
-        let userConcepts = document.querySelector("#concepts").value
-        let userJournalDate = document.querySelector("#journalDate").value
-
-        if (userMood === "") {
-            alert("Missing a mood")
-        }
-        else if (userJournalEntry === "") {
-            alert("Missing a Journal Entry")
-        }
-        else if (userConcepts === "") {
-            alert("Missing a Concept Entry")
-        }
-        else if (userJournalDate === "") {
-            alert("Missing a journal date")
-        }
-
-
-        if (userMood !== "" && userJournalEntry !== "" && userConcepts !== "" && userJournalDate !== "") {
-
-
-            userObject = factoryJournalEntry(userJournalDate, userConcepts, userJournalEntry, userMood)
-
-
-            API.saveJournalEntry(userObject).then(() => {
-
-                API.getJournalData()
-                .then(() => {
-
-                    journalEntryList()
-
-                })
-
-            })
-
-        }
-       
-
-    }
-    )
-}
-
-
-
-
-
 
 export default makeJournalEntryComponent
-export { saveButtonEvent }
+
 
 
